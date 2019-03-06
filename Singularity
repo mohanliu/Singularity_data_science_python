@@ -19,13 +19,13 @@ From: continuumio/miniconda3
 %post   
      # Update conda packages
      /opt/conda/bin/conda update --all -y --quiet
-     # Install basic packages
-     /opt/conda/bin/conda install -c conda-forge -y -q pip matplotlib tqdm jupyter cython scipy numpy pandas
+     # Install conda packages
+     /opt/conda/bin/conda install -c conda-forge -y -q pip matplotlib tqdm jupyter cython scipy numpy pandas scikit-learn seaborn lightgbm tensorflow 
+     /opt/conda/bin/conda install -c conda-forge -y -q tornado=5.1.1
      # Update pip
      /opt/conda/bin/pip install -U pip -q
      # Install additional packages
-     /opt/conda/bin/conda install -c conda-forge -y -q scikit-learn seaborn lightgbm tensorflow 
-     /opt/conda/bin/pip install keras
+     /opt/conda/bin/pip install keras pydot
      # Clean up
      /opt/conda/bin/conda clean --all -y --quiet
      apt-get autoremove -y
