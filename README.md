@@ -4,5 +4,5 @@
 
 Download the pre-built image
 ```
-singularity pull --name dspy.img shub://mohanliu/Singularity_data_science_python
+singularity pull --name dspy.simg shub://mohanliu/Singularity_data_science_python
 ```
